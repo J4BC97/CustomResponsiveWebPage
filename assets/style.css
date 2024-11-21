@@ -10,13 +10,11 @@
 /* Logo Presentacion */
 
 .logo-presentacion {
+    position: absolute;
     text-align: center;
     font-size: 50px;
     z-index: 10;
-    top: 30%;
-    left: 50%;
     background-color: transparent;
-    
 }
 
 .logo-presentacion img {
@@ -28,7 +26,7 @@
 }
 
 .logo-presentacion p {
-    background-color: rgb(223, 212, 199);
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 10px;
     font-weight: bold;
@@ -36,11 +34,16 @@
 
 /* Navbar */
 
+nav img {
+    width: 40px;
+    height: 40px;
+}
 
 /* Carousel */
 
 .carousel {
     height: 500px;
+    margin: 0 auto;
 }
 
 .carousel-item {
@@ -73,7 +76,7 @@
 }
 
 .contenedor-footer {
-    border: 2px solid black;
+    background-color: transparent;
 }
 
 /* Seccion: Significado del arte */
