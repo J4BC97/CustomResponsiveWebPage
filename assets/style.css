@@ -29,7 +29,9 @@
 
 .logo-presentacion p {
     background-color: rgb(223, 212, 199);
-
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 /* Navbar */
@@ -78,12 +80,14 @@
 
 
 section .seccion-descripcion {
-    border: 1px solid black;
     margin-top: 40px;
     border-radius: 10px;
     background-color: transparent;
     width: 100%;
     max-width: 600px;
+    height: auto;
+    padding-bottom: 5px;
+
 }
 
 @media (max-width: 576px) {
@@ -93,20 +97,21 @@ section .seccion-descripcion {
   }
 
 section .seccion-descripcion h1 {
-    background-color: aquamarine;
+    background-color: rgb(166, 218, 200);
     text-align: center;
-    border-bottom: 1px solid black;
     margin: 0px auto;
     position: relative;
     width: 100%;
     max-width: 2000px;
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
+    font-weight: bold;
 }
 
- section .seccion-descripcion p {
-    margin: 15px;
+section .seccion-descripcion p {
+    margin: 15px 15px 15px 15px;
     text-align: justify;
+    padding: 10px auto;
 }
 
 section .seccion-descripcion, p {
