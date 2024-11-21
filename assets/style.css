@@ -2,8 +2,8 @@
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box;
+    background-color: transparent;
 }
-
 
 /* Contenedor CL */
 
@@ -15,20 +15,21 @@
     z-index: 10;
     top: 30%;
     left: 50%;
+    background-color: transparent;
+    
 }
 
 .logo-presentacion img {
     width: 100%;
     height: 100%;
     max-width: 400px;
-    border: 5px solid white;
     border-radius: 100%;
     margin: 10px;
 }
 
 .logo-presentacion p {
     background-color: rgb(223, 212, 199);
-    
+
 }
 
 /* Navbar */
@@ -71,6 +72,56 @@
 
 .contenedor-footer {
     border: 2px solid black;
-    width: ;
-    background-color: rgb(0, 0, 0);
+}
+
+/* Seccion: Significado del arte */
+
+
+section .seccion-descripcion {
+    border: 1px solid black;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 100%;
+    max-width: 600px;
+}
+
+@media (max-width: 576px) {
+    section .seccion-descripcion {
+      width: 85%; /* Reduce el ancho en pantallas pequeñas */
+    }
+  }
+
+section .seccion-descripcion h1 {
+    background-color: aquamarine;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 0px auto;
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+ section .seccion-descripcion p {
+    margin: 15px;
+    text-align: justify;
+}
+
+section .seccion-descripcion, p {
+    background-color: rgb(255, 255, 226);
+}
+
+/* Efecto Parallax */
+
+/* Contenedor del fondo Parallax */
+
+.parallax {
+    background-image: url('./fondo-parallax/pexels-francesco-ungaro-1526713.png'); /* Cambia esta URL a tu imagen */
+    height: 100vh; /* Ocupa toda la altura del viewport */
+    background-attachment: fixed; /* Clave para el efecto Parallax */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Escala la imagen para cubrir toda el área */
 }
