@@ -6,15 +6,22 @@
 }
 
 /* Contenedor CL */
-
+main {
+    margin: 0 auto;
+    padding: 0 auto;
+    position: relative;
+    display: block;
+}
 /* Logo Presentacion */
 
 .logo-presentacion {
-    position: absolute;
+    position: relative;
     text-align: center;
     font-size: 50px;
     z-index: 10;
     background-color: transparent;
+    width: 40%;
+    margin: 20px auto;
 }
 
 .logo-presentacion img {
@@ -31,6 +38,7 @@
     border-radius: 10px;
     font-weight: bold;
 }
+
 
 /* Navbar */
 
@@ -59,13 +67,16 @@ nav img {
     object-fit: cover; /* Mantiene el aspecto proporcional y llena el contenedor */
 }
 
-.carousel-item {
-    transition: transform 2.6s ease-in-out;
+@media (max-width: 576px) {
+    .carousel-item {
+        height: 1000px;
+    }
 }
-  
-.carousel-fade .active.carousel-item-start,
-.carousel-fade .active.carousel-item-end {
-    transition: opacity 0s 2.6s;
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 1000px;
+    }
 }
 
 /* Footer */
@@ -75,7 +86,7 @@ nav img {
     height: 30px;
 }
 
-.contenedor-footer {
+footer, .contenedor-footer {
     background-color: transparent;
 }
 
@@ -127,9 +138,27 @@ section .seccion-descripcion, p {
 
 .parallax {
     background-image: url('./fondo-parallax/pexels-francesco-ungaro-1526713.png'); /* Cambia esta URL a tu imagen */
-    height: 100vh; /* Ocupa toda la altura del viewport */
+    height: 100%; /* Ocupa toda la altura del viewport */
     background-attachment: fixed; /* Clave para el efecto Parallax */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-size: cover; /* Escala la imagen para cubrir toda el área */
+}
+
+/* Cartas */
+
+.carta-contenedor {
+    position: relative;
+    margin: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+}
+
+.carta-contenedor .card {
+    margin: 40px auto;
+}
+
+.carta-contenedor .card .card-text {
+    background-color: transparent;
 }
